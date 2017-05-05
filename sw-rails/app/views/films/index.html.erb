@@ -1,0 +1,10 @@
+<% @films.each do |film| %>
+  <h1><%= film.title %></h1>
+<% end %>
+
+<%= form_for @film do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.submit %>
+<% end %>
